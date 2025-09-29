@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss}] %-5level %c{1} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.elaalp" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+
+
+        <!-- Gürültülü kütüphaneleri kıs -->
+        <Logger name="io.github.bonigarcia" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="org.openqa.selenium" level="warn" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="org.openqa.selenium" level="error" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
