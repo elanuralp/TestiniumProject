@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="POM + Log4j created.">
+    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="popup close function added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,9 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
@@ -171,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759172928641</updated>
-      <workItem from="1759172929818" duration="11670000" />
+      <workItem from="1759172929818" duration="14410000" />
     </task>
     <task id="LOCAL-00001" summary="POM + Log4j created.">
       <option name="closed" value="true" />
@@ -181,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759176198879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="popup close function added">
+      <option name="closed" value="true" />
+      <created>1759217190217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759217190217</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +198,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="POM + Log4j created." />
-    <option name="LAST_COMMIT_MESSAGE" value="POM + Log4j created." />
+    <MESSAGE value="popup close function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="popup close function added" />
   </component>
 </project>

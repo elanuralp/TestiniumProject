@@ -19,7 +19,7 @@ public class DriverFactory {
     public static WebDriver getDriver() {
         if (DRIVER.get() == null) {
             DRIVER.set(createDriver());
-            logger.info("Yeni WebDriver örneği oluşturuldu: {}", DRIVER.get());
+            logger.info("WebDriver başlatıldı: {}", DRIVER.get());
         }
         return DRIVER.get();
     }
@@ -53,7 +53,7 @@ public class DriverFactory {
     public static void quitDriver() {
         WebDriver d = DRIVER.get();
         if (d != null) {
-            logger.info("Driver kapatılıyor...");
+            logger.info("WebDriver kapatılıyor...");
             d.quit();
             DRIVER.remove();
         }

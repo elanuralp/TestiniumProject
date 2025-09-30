@@ -27,7 +27,6 @@ public class BaseTest {
 
     @AfterEach
     public void tearDown() {
-        logger.info("Test bitiyor, driver kapatılıyor...");
         DriverFactory.quitDriver();
     }
 }
