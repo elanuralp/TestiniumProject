@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
+import pages.HomePage;
 
 public class BaseTest {
 
@@ -19,7 +20,10 @@ public class BaseTest {
         driver = DriverFactory.getDriver();
         driver.get(Config.get("baseUrl"));
         logger.info("URL açıldı: {}", Config.get("baseUrl"));
+        new HomePage().closePopups();
+
     }
+
 
     @AfterEach
     public void tearDown() {

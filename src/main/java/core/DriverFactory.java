@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class DriverFactory {
 
@@ -22,15 +24,29 @@ public class DriverFactory {
         return DRIVER.get();
     }
 
+
     private static WebDriver createDriver() {
         logger.info("Chrome driver başlatılıyor...");
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
+        if (Config.getBool("headless", false)) {
+            options.addArguments("--headless=new");
+        }
         options.addArguments("--start-maximized");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+        options.setExperimentalOption("prefs", prefs);
 
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(
+                Config.getInt("pageLoadTimeout", 30))
+        );
         return driver;
     }
 

@@ -20,8 +20,16 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
+    protected WebElement clickable(By by) {
+        return wait.until(ExpectedConditions.elementToBeClickable(by));
+    }
+
     protected void click(By by) {
-        find(by).click();
+        clickable(by).click();
+    }
+
+    protected void jsClick(WebElement el) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
     }
 
     protected void type(By by, String text) {
@@ -30,8 +38,8 @@ public class BasePage {
         el.sendKeys(text);
     }
 
-    protected void scrollIntoView(By by) {
-        WebElement el = find(by);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", el);
-    }
+
+
+
+
 }
