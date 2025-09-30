@@ -17,4 +17,11 @@ public class HomeSearchTest extends BaseTest {
         HomePage homePage = new HomePage();
         Assertions.assertTrue(homePage.isHotelTabDefault(), "Otel sekmesi seçili değil!");
     }
+
+    @Test
+    void antalyaCsvdenYazilir() {
+        HomePage home = new HomePage();
+        home.typeDestinationFromCsv("src/test/resources/testdata/locations.csv");
+    }
+
 }

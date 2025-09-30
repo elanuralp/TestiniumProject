@@ -13,6 +13,9 @@ public class HomePage extends BasePage {
 
     private final By hotelTabBtn =
             By.xpath("//button[.//span[normalize-space()='Otel']]");
+    private final By destinationInput =
+            By.xpath("//div[.//span[normalize-space()='Nereye gideceksiniz?']]//input"
+                    + "|//input[contains(@placeholder,'Yurt İçi') or contains(@placeholder,'Konum')]");
 
     public boolean isHotelTabDefault() {
         WebElement btn = new WebDriverWait(driver, Duration.ofSeconds(10))
@@ -27,6 +30,17 @@ public class HomePage extends BasePage {
             logger.warn("Doğrulama başarısız: 'Otel' sekmesi varsayılan olarak seçili değil (display={}).", display);
         }
         return selected;
+    }
+
+    public void typeDestinationFromCsv(String csvPath) {
+        String value = utils.CsvUtils.readFirstValue(csvPath);
+        WebElement input = wait.until(org.openqa.selenium.support.ui.ExpectedConditions
+                .elementToBeClickable(destinationInput));
+        highlight(input);
+        input.click();
+        input.clear();
+        input.sendKeys(value);
+        logger.info("'Nereye gideceksiniz?' alanına CSV’den okunan değer yazıldı: '{}'", value);
     }
 
 

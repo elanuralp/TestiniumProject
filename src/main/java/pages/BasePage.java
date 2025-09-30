@@ -38,6 +38,15 @@ public class BasePage {
         el.sendKeys(text);
     }
 
+    protected void highlight(WebElement el) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript(
+                "arguments[0].style.outline='3px solid yellow'; arguments[0].style.transition='outline 0.2s';",
+                el
+        );
+    }
+
+
 
 
 

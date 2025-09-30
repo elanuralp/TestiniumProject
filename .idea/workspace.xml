@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="popup close function added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" afterDir="false" />
+    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="otel tab default control">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CsvUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CsvUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/locations.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/locations.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759172928641</updated>
-      <workItem from="1759172929818" duration="14410000" />
+      <workItem from="1759172929818" duration="15007000" />
     </task>
     <task id="LOCAL-00001" summary="POM + Log4j created.">
       <option name="closed" value="true" />
@@ -190,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759217190217</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="otel tab default control">
+      <option name="closed" value="true" />
+      <created>1759219483067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759219483067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +208,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="POM + Log4j created." />
     <MESSAGE value="popup close function added" />
-    <option name="LAST_COMMIT_MESSAGE" value="popup close function added" />
+    <MESSAGE value="otel tab default control" />
+    <option name="LAST_COMMIT_MESSAGE" value="otel tab default control" />
   </component>
 </project>
