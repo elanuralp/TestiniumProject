@@ -16,6 +16,8 @@ public class HomePage extends BasePage {
     private final By destinationInput =
             By.xpath("//div[.//span[normalize-space()='Nereye gideceksiniz?']]//input"
                     + "|//input[contains(@placeholder,'Yurt İçi') or contains(@placeholder,'Konum')]");
+    private final By firstAntalyaOption =
+            By.xpath("(//div[.//strong[normalize-space()='Antalya']])[1]");
 
     public boolean isHotelTabDefault() {
         WebElement btn = new WebDriverWait(driver, Duration.ofSeconds(10))
@@ -41,6 +43,13 @@ public class HomePage extends BasePage {
         input.clear();
         input.sendKeys(value);
         logger.info("'Nereye gideceksiniz?' alanına CSV’den okunan değer yazıldı: '{}'", value);
+    }
+
+    public void clickFirstAntalyaOption() {
+        WebElement option = wait.until(ExpectedConditions.elementToBeClickable(firstAntalyaOption));
+        highlight(option);
+        jsClick(option); // normal click yerine jsClick daha güvenli
+        logger.info("Öneri listesinden ilk 'Antalya' seçeneğine tıklandı.");
     }
 
 

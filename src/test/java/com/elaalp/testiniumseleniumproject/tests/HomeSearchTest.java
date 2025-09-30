@@ -19,9 +19,10 @@ public class HomeSearchTest extends BaseTest {
     }
 
     @Test
-    void antalyaCsvdenYazilir() {
+    void antalyaCsvdenYazilirveTiklanir() {
         HomePage home = new HomePage();
         home.typeDestinationFromCsv("src/test/resources/testdata/locations.csv");
+        home.clickFirstAntalyaOption();
     }
 
 }
