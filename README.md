@@ -12,3 +12,7 @@ Java + Maven kullanılarak yazılmıştır.
 - JUnit 5
 - Log4j2
 - WebDriverManager (otomatik driver indirme için)
+
+Tüm testleri çalıştırmak için:
+
+mvn -Dtest=HomeSearchTest test
