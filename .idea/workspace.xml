@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="write antalya from csv">
+    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="antalya tıklama">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsHighlighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsHighlighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,10 +64,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.HomeSearchTest.antalyaCsvdenYazilirveTiklanir.executor": "Run",
+    "JUnit.HomeSearchTest.dumpCalendarDays.executor": "Run",
     "JUnit.HomeSearchTest.executor": "Run",
     "JUnit.HomeSearchTest.isHotelTabDefaultSelected.executor": "Run",
+    "JUnit.HomeSearchTest.nisanIlkHaftaSecimi.executor": "Run",
     "JUnit.HomeSearchTest.otelTabiDefaultMu.executor": "Run",
     "JUnit.HomeSearchTest.siteAcilabiliyorMu.executor": "Run",
+    "JUnit.HomeSearchTest.testDateAreaClick.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -78,7 +85,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.HomeSearchTest.antalyaCsvdenYazilirveTiklanir">
+  <component name="RunManager" selected="JUnit.HomeSearchTest">
     <configuration name="HomeSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
@@ -126,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeSearchTest.otelTabiDefaultMu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeSearchTest.nisanIlkHaftaSecimi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +143,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.elaalp.testiniumseleniumproject.tests" />
       <option name="MAIN_CLASS_NAME" value="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" />
-      <option name="METHOD_NAME" value="otelTabiDefaultMu" />
+      <option name="METHOD_NAME" value="nisanIlkHaftaSecimi" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,18 +167,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HomeSearchTest.antalyaCsvdenYazilirveTiklanir" />
         <item itemvalue="JUnit.HomeSearchTest" />
+        <item itemvalue="JUnit.HomeSearchTest.nisanIlkHaftaSecimi" />
+        <item itemvalue="JUnit.HomeSearchTest.antalyaCsvdenYazilirveTiklanir" />
         <item itemvalue="JUnit.HomeSearchTest.isHotelTabDefaultSelected" />
         <item itemvalue="JUnit.HomeSearchTest.siteAcilabiliyorMu" />
-        <item itemvalue="JUnit.HomeSearchTest.otelTabiDefaultMu" />
       </list>
     </recent_temporary>
   </component>
   <component name="SeleniumInternalSettingsState">
     <option name="lastFrameworkName" value="FluentLenium" />
     <option name="lastLanguageId" value="JAVA" />
-    <option name="lastUrl" value="about:blank?wi_0" />
+    <option name="lastUrl" value="https://www.setur.com.tr/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Setur_BrandingExactMatch_2025_Search&amp;utm_content=RSA&amp;gad_source=1&amp;gad_campaignid=20436894186&amp;gclid=Cj0KCQjw3OjGBhDYARIsADd-uX5ffvNYZlmlZjIl0u_wpMS9oS1k0v8Ulp5JOWgE7P-ZVazXxMNzm7AaAj--EALw_wcB" />
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -188,7 +195,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759172928641</updated>
-      <workItem from="1759172929818" duration="17450000" />
+      <workItem from="1759172929818" duration="47421000" />
     </task>
     <task id="LOCAL-00001" summary="POM + Log4j created.">
       <option name="closed" value="true" />
@@ -222,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759221452631</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="antalya tıklama">
+      <option name="closed" value="true" />
+      <created>1759222915892</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759222915892</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +248,31 @@
     <MESSAGE value="popup close function added" />
     <MESSAGE value="otel tab default control" />
     <MESSAGE value="write antalya from csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="write antalya from csv" />
+    <MESSAGE value="antalya tıklama" />
+    <option name="LAST_COMMIT_MESSAGE" value="antalya tıklama" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java</url>
+          <line>21</line>
+          <properties class="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" method="antalyaCsvdenYazilirveTiklanir">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java</url>
+          <line>27</line>
+          <properties class="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" method="nisanIlkHaftaSecimi">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

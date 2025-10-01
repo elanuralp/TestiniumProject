@@ -6,49 +6,61 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
-public class BasePage {
+public abstract class BasePage {
     protected WebDriver driver;
-    protected WebDriverWait wait;
+    protected WebDriverWait wait; // default 10 sn
 
     public BasePage() {
         this.driver = DriverFactory.getDriver();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait   = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    protected WebElement find(By by) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    protected WebElement find(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-
-    protected WebElement clickable(By by) {
-        return wait.until(ExpectedConditions.elementToBeClickable(by));
+    protected WebElement findClickable(By locator) {
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-
-    protected void click(By by) {
-        clickable(by).click();
+    protected WebElement findPresent(By locator) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
-
-    protected void jsClick(WebElement el) {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
-    }
-
-    protected void type(By by, String text) {
-        WebElement el = find(by);
-        el.clear();
-        el.sendKeys(text);
-    }
-
-    protected void highlight(WebElement el) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript(
-                "arguments[0].style.outline='3px solid yellow'; arguments[0].style.transition='outline 0.2s';",
-                el
-        );
+    protected List<WebElement> findAll(By locator) {
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
     }
 
 
+    protected WebElement waitPresent(By locator, long seconds) {
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    protected void click(WebElement element) {
+        try { element.click(); }
+        catch (ElementNotInteractableException e) { jsClick(element); }
+    }
+    protected void click(By locator) { click(findClickable(locator)); }
+
+    protected void jsClick(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+    }
+    protected void scrollIntoView(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", element);
+    }
 
 
+    protected void clearOverlays() {
+        ((JavascriptExecutor) driver).executeScript("""
+            (() => {
+              const s='[id^=ins-],[class*="ins-"],[id*="cookie"],[class*="cookie"],iframe[src*="insider"],[class*="overlay"],[class*="backdrop"],[class*="modal"]';
+              document.querySelectorAll(s).forEach(e=>{try{e.remove();}catch(_){}}); })();
+        """);
+    }
 
-
+    protected void waitAttributeContains(By locator, String attr, String value, int seconds) {
+        new WebDriverWait(driver, Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.attributeContains(locator, attr, value));
+    }
+    protected void shortPause() { try { Thread.sleep(120); } catch (InterruptedException ignored) {} }
 }
