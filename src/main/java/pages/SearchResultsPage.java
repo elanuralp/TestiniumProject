@@ -22,6 +22,7 @@ public class SearchResultsPage extends BasePage {
     public SearchResultsPage waitUntilReady() {
         find(rerunSearchBtn);
         return this;
+
     }
 
     public boolean verifyUrlContains(String keyword) {
