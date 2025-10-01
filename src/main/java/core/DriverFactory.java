@@ -36,6 +36,10 @@ public class DriverFactory {
         options.addArguments("--start-maximized");
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        options.setExperimentalOption("useAutomationExtension", false);
+
+
 
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("profile.default_content_setting_values.notifications", 2);

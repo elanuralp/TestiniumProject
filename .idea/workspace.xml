@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="Tarih seçme">
+    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="url kontrol antalya olması">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759172928641</updated>
-      <workItem from="1759172929818" duration="53810000" />
+      <workItem from="1759172929818" duration="55974000" />
     </task>
     <task id="LOCAL-00001" summary="POM + Log4j created.">
       <option name="closed" value="true" />
@@ -249,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759313452954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="url kontrol antalya olması">
+      <option name="closed" value="true" />
+      <created>1759323494563</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759323494563</updated>
+    </task>
+    <task id="LOCAL-00008" summary="url kontrol antalya olması">
+      <option name="closed" value="true" />
+      <created>1759323535629</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759323535629</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,21 +277,7 @@
     <MESSAGE value="write antalya from csv" />
     <MESSAGE value="antalya tıklama" />
     <MESSAGE value="Tarih seçme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tarih seçme" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java</url>
-          <line>56</line>
-          <properties class="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" method="clickSearchAndVerifyResults">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="url kontrol antalya olması" />
+    <option name="LAST_COMMIT_MESSAGE" value="url kontrol antalya olması" />
   </component>
 </project>

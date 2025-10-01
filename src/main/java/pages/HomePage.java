@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.CsvUtils;
-
 import java.time.LocalDate;
 
 public class HomePage extends BasePage {

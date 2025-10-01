@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public abstract class BasePage {
     protected WebDriver driver;
@@ -19,6 +20,11 @@ public abstract class BasePage {
     protected WebElement find(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+    protected List<WebElement> findAll(By locator) {
+        return driver.findElements(locator);
+    }
+
     protected WebElement findClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
