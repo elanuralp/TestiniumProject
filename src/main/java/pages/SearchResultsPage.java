@@ -72,14 +72,10 @@ public class SearchResultsPage extends BasePage {
     }
 
     public void waitUntilHeaderCountUpdates(int expected) {
-        wait.until(d -> {
-            String text = d.findElement(productCountHeader).getText();
-            String digits = text.replaceAll("\\D+", "");
-            if (digits.isEmpty()) return false;
-            return Integer.parseInt(digits) == expected;
-        });
+        waitTextContains(productCountHeader, "(" + expected + ")", 10);
         logger.info("Header sayısı {} olarak güncellendi.", expected);
     }
+
 
 
 

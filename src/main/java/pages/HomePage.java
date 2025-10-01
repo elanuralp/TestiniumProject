@@ -38,22 +38,22 @@ public class HomePage extends BasePage {
 
     public void typeDestinationFromCsvAndSelect(String csvPath) {
         String value = CsvUtils.readFirstValue(csvPath);
-        WebElement input = findClickable(destinationInput);
         clearOverlays();
+        WebElement input = findClickable(destinationInput);
         input.click();
-        input.sendKeys(Keys.chord(Keys.CONTROL, "a"));
-        input.sendKeys(Keys.DELETE);
-        input.sendKeys(value);
+        type(input, value);
         WebElement opt = wait.until(ExpectedConditions.visibilityOfElementLocated(antalyaOption));
         try {
             scrollIntoView(opt);
-            opt.click();
+            click(opt);
         } catch (Exception e) {
             jsClick(opt);
         }
         waitAttributeContains(destinationInput, "value", "Antalya", 8);
         logger.info("CSV'den gelen '{}' başarıyla seçildi.", value);
     }
+
+
 
     public void pickApril1to8() {
         clearOverlays();
@@ -109,6 +109,7 @@ public class HomePage extends BasePage {
             return false;
         }
     }
+
     private boolean isAprilMissing(int year) {
         return driver.findElements(captions).stream()
                 .filter(WebElement::isDisplayed)
