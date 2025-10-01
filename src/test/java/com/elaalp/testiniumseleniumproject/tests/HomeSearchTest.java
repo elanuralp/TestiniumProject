@@ -1,8 +1,15 @@
 package com.elaalp.testiniumseleniumproject.tests;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebElement;
 import pages.HomePage;
+import pages.SearchResultsPage;
+
 import java.time.LocalDate;
+
+import static java.nio.file.Files.find;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class HomeSearchTest extends BaseTest {
 
@@ -15,7 +22,7 @@ public class HomeSearchTest extends BaseTest {
     @Test
     void isHotelTabDefaultSelected() {
         HomePage homePage = new HomePage();
-        Assertions.assertTrue(homePage.isHotelTabDefault(), "Otel sekmesi seçili değil!");
+        assertTrue(homePage.isHotelTabDefault(), "Otel sekmesi seçili değil!");
     }
 
     @Test
@@ -34,19 +41,31 @@ public class HomeSearchTest extends BaseTest {
                 ? LocalDate.now().getYear()
                 : LocalDate.now().getYear() + 1;
 
-        Assertions.assertTrue(
+        assertTrue(
                 home.verifyAprilDates(year),
                 "Tarih alanında beklenen aralık yok: 01.04." + year + " - 08.04." + year
         );
     }
 
+    @Test
+    void yetiskinSayisiArtirilir() {
+        HomePage home = new HomePage();
+        home.incrementAdultAndVerify();
+    }
 
-
-
-
-
-
-
-
-
+    @Test
+    void clickSearchAndVerifyResults() {
+        HomePage home = new HomePage();
+        home.typeDestinationFromCsvAndSelect("src/test/resources/testdata/locations.csv");
+        home.pickApril1to8();
+        home.incrementAdultAndVerify();
+        home.clickSearchButton();
+        SearchResultsPage searchResultsPage = new SearchResultsPage().waitUntilReady();
+        assertTrue(
+                searchResultsPage.verifyUrlContains("antalya"),
+                "URL 'antalya' içermiyor!"
+        );
+    }
 }
+
+

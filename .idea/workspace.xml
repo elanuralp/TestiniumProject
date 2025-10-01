@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="antalya tıklama">
+    <list default="true" id="ce8dfcad-5f8c-4a23-8247-596381866543" name="Changes" comment="Tarih seçme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsHighlighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsHighlighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java" afterDir="false" />
     </list>
@@ -64,13 +64,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.HomeSearchTest.antalyaCsvdenYazilirveTiklanir.executor": "Run",
+    "JUnit.HomeSearchTest.clickSearchAndVerifyResults.executor": "Run",
+    "JUnit.HomeSearchTest.clickSearchButton.executor": "Run",
     "JUnit.HomeSearchTest.dumpCalendarDays.executor": "Run",
     "JUnit.HomeSearchTest.executor": "Run",
     "JUnit.HomeSearchTest.isHotelTabDefaultSelected.executor": "Run",
     "JUnit.HomeSearchTest.nisanIlkHaftaSecimi.executor": "Run",
     "JUnit.HomeSearchTest.otelTabiDefaultMu.executor": "Run",
+    "JUnit.HomeSearchTest.searchButtonClickTest.executor": "Run",
     "JUnit.HomeSearchTest.siteAcilabiliyorMu.executor": "Run",
     "JUnit.HomeSearchTest.testDateAreaClick.executor": "Run",
+    "JUnit.HomeSearchTest.yetiskinSayisiArtirilir.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -85,7 +89,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.HomeSearchTest">
+  <component name="RunManager" selected="JUnit.HomeSearchTest.clickSearchAndVerifyResults">
     <configuration name="HomeSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
@@ -101,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeSearchTest.antalyaCsvdenYazilirveTiklanir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeSearchTest.clickSearchAndVerifyResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -111,13 +115,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.elaalp.testiniumseleniumproject.tests" />
       <option name="MAIN_CLASS_NAME" value="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" />
-      <option name="METHOD_NAME" value="antalyaCsvdenYazilirveTiklanir" />
+      <option name="METHOD_NAME" value="clickSearchAndVerifyResults" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeSearchTest.isHotelTabDefaultSelected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeSearchTest.clickSearchButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -127,13 +131,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.elaalp.testiniumseleniumproject.tests" />
       <option name="MAIN_CLASS_NAME" value="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" />
-      <option name="METHOD_NAME" value="isHotelTabDefaultSelected" />
+      <option name="METHOD_NAME" value="clickSearchButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeSearchTest.nisanIlkHaftaSecimi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeSearchTest.searchButtonClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -143,13 +147,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.elaalp.testiniumseleniumproject.tests" />
       <option name="MAIN_CLASS_NAME" value="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" />
-      <option name="METHOD_NAME" value="nisanIlkHaftaSecimi" />
+      <option name="METHOD_NAME" value="searchButtonClickTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeSearchTest.siteAcilabiliyorMu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeSearchTest.yetiskinSayisiArtirilir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestiniumSeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -159,7 +163,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.elaalp.testiniumseleniumproject.tests" />
       <option name="MAIN_CLASS_NAME" value="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" />
-      <option name="METHOD_NAME" value="siteAcilabiliyorMu" />
+      <option name="METHOD_NAME" value="yetiskinSayisiArtirilir" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomeSearchTest.clickSearchAndVerifyResults" />
+        <item itemvalue="JUnit.HomeSearchTest.clickSearchButton" />
+        <item itemvalue="JUnit.HomeSearchTest.yetiskinSayisiArtirilir" />
+        <item itemvalue="JUnit.HomeSearchTest.searchButtonClickTest" />
         <item itemvalue="JUnit.HomeSearchTest" />
-        <item itemvalue="JUnit.HomeSearchTest.nisanIlkHaftaSecimi" />
-        <item itemvalue="JUnit.HomeSearchTest.antalyaCsvdenYazilirveTiklanir" />
-        <item itemvalue="JUnit.HomeSearchTest.isHotelTabDefaultSelected" />
-        <item itemvalue="JUnit.HomeSearchTest.siteAcilabiliyorMu" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759172928641</updated>
-      <workItem from="1759172929818" duration="47421000" />
+      <workItem from="1759172929818" duration="53810000" />
     </task>
     <task id="LOCAL-00001" summary="POM + Log4j created.">
       <option name="closed" value="true" />
@@ -237,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759222915892</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tarih seçme">
+      <option name="closed" value="true" />
+      <created>1759313452954</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759313452954</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,28 +261,20 @@
     <MESSAGE value="otel tab default control" />
     <MESSAGE value="write antalya from csv" />
     <MESSAGE value="antalya tıklama" />
-    <option name="LAST_COMMIT_MESSAGE" value="antalya tıklama" />
+    <MESSAGE value="Tarih seçme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tarih seçme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java</url>
-          <line>21</line>
-          <properties class="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" method="antalyaCsvdenYazilirveTiklanir">
+          <line>56</line>
+          <properties class="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" method="clickSearchAndVerifyResults">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/elaalp/testiniumseleniumproject/tests/HomeSearchTest.java</url>
-          <line>27</line>
-          <properties class="com.elaalp.testiniumseleniumproject.tests.HomeSearchTest" method="nisanIlkHaftaSecimi">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
